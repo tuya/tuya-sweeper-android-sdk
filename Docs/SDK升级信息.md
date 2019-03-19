@@ -19,3 +19,9 @@
 * [x]  [修改]:getSweeperByteData 回调里面onSuccess的数据接口->(byte[])
 * [x]  [修改]:getSweeperByteData 回调里面onFailure的具体下载错误信息
 * [x]  [修改]:getCloudFileUrl 返回的是一个完整url(包含https://)
+
+#### 0.0.5 -> 0.0.6
+* [x]  [修改]:清扫历史记录,会根据所属家庭的纬度区分，共享的设备暂时不支持查看历史记录
+
+
+
