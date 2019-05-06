@@ -14,10 +14,10 @@
 
 #### 0.0.4 -> 0.0.5
 
-* [x]  [新增]:删除历史接口
-* [x]  [新增]:查询当前地图和路径path接口
+* [x]  [新增]:删除历史接口(deleteSweeperHistoryData)
+* [x]  [新增]:查询当前地图和路径path接口 (getSweeperCurrentPath)
 * [x]  [修改]:getSweeperByteData 回调里面onSuccess的数据接口->(byte[])
-* [x]  [修改]:getSweeperByteData 回调里面onFailure的具体下载错误信息
+* [x]  [修改]:startConnectSweeperDataChannel，startConnectSweeperByteDataChannel 回调里增加devId
 * [x]  [修改]:getCloudFileUrl 返回的是一个完整url(包含https://)
 
 #### 0.0.5 -> 0.0.6
@@ -28,5 +28,8 @@
 
 #### 0.0.7 -> 0.0.8
 * [x]  [bugfix]:修复bug
+
+#### 0.0.8 -> 0.0.9
+* [x]  [bugfix]:修复华为部分机型AP配网的问题
 
 
