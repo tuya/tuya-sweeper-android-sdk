@@ -195,8 +195,18 @@ route_size表示路径文件大小，即文件中路径数据的size
     void deleteSweeperHistoryData(String devId, List<String> fileIdList, final ITuyaDelHistoryCallback callback);
 ```
 ---
+#### （9）清空历史记录
 
-#### （9）获取实时数据的路径
+```java
+ /**
+     * 删除所有历史记录
+     * @param devId     id
+     * @param callback
+     */
+    void deleteAllHistoryData(String devId,final ITuyaDelHistoryCallback callback);
+```
+---
+#### （10）获取实时数据的路径
 
 ```java
 /**
