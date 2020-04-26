@@ -1,0 +1,485 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Integrated SDK · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Version_Changes.html" />
+    
+    
+    <link rel="prev" href="Preparation.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    Integration preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    Integrated SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Version_Changes.html">
+            
+                <a href="Version_Changes.html">
+            
+                    
+                    Version change instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Gyro_Sweeper.html">
+            
+                <a href="Gyro_Sweeper.html">
+            
+                    
+                    Gyroscope and visual sweeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html">
+            
+                    
+                    Laser sweeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#Sweeper_Data_Acquisition">
+            
+                    
+                    Data collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#Multi-map_Management_of_Laser_Sweeper">
+            
+                    
+                    Multi-map management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Voice_Download.html">
+            
+                <a href="Voice_Download.html">
+            
+                    
+                    Voice package download
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Word_Introduction.html">
+            
+                <a href="Word_Introduction.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Update_Log.html">
+            
+                <a href="Update_Log.html">
+            
+                    
+                    Update log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Integrated SDK</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="integrate-sdk"><a name="integrate-sdk" class="plugin-anchor" href="#integrate-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>Integrate SDK</h1>
+<h1 id="preparation-for-integration"><a name="preparation-for-integration" class="plugin-anchor" href="#preparation-for-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Preparation for Integration</h1>
+<h3 id="create-project"><a name="create-project" class="plugin-anchor" href="#create-project"><i class="fa fa-link" aria-hidden="true"></i></a>Create Project</h3>
+<p>Build your project in the Android Studio.</p>
+<h3 id="configure-the-root-buildgradle"><a name="configure-the-root-buildgradle" class="plugin-anchor" href="#configure-the-root-buildgradle"><i class="fa fa-link" aria-hidden="true"></i></a>Configure the root build.gradle</h3>
+<p>Add in repositories:</p>
+<pre class="language-"><code class="lang-groovy">maven <span class="token punctuation">{</span>
+  url <span class="token string">&quot;https://maven-other.tuya.com/repository/maven-releases/&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="configure-the-buildgradle"><a name="configure-the-buildgradle" class="plugin-anchor" href="#configure-the-buildgradle"><i class="fa fa-link" aria-hidden="true"></i></a>Configure the build.gradle</h3>
+<p>Add the following codes to the build.gradle file.</p>
+<pre class="language-"><code class="lang-groovy">defaultConfig <span class="token punctuation">{</span>
+    ndk <span class="token punctuation">{</span>
+        abiFilters <span class="token string">&quot;armeabi-v7a&quot;</span>
+    <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+        implementation <span class="token string">&apos;com.alibaba:fastjson:1.1.67.android&apos;</span>
+        implementation <span class="token string">&apos;com.squareup.okhttp3:okhttp-urlconnection:3.12.3&apos;</span>
+        implementation <span class="token string">&apos;org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0&apos;</span>
+        implementation <span class="token string">&apos;com.tuya.smart:tuyasmart:3.13.0&apos;</span>
+        implementation <span class="token string">&apos;com.tuya.smart:sweeper:0.1.0&apos;</span>
+    <span class="token punctuation">}</span>
+
+repositories <span class="token punctuation">{</span>
+    <span class="token function">mavenLocal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">google</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p><strong>[Note]</strong></p>
+<ul>
+<li>The Tuya Smart sdk solely supports the platform of armeabi-v7a architecture by default. Developer may refer to the <a href="https://github.com/TuyaInc/tuyasmart_home_android_sdk/tree/master/so_libs" target="_blank">GitHub</a> if you need other platforms. </li>
+<li>After version 3.11.0, the so libraries of armeabi-v7a, arm64-v8a, armeabi platforms have been integrated into sdk. Please remove the relevant so-banks of sdk manually placed in the local, and use the default provided by sdk.</li>
+</ul>
+</blockquote>
+<h3 id="integrated-security-image"><a name="integrated-security-image" class="plugin-anchor" href="#integrated-security-image"><i class="fa fa-link" aria-hidden="true"></i></a>Integrated security image</h3>
+<p>Click the download button to download the security image.</p>
+<p><img src="images/download_t_s.png" alt=""></p>
+<p>Rename the downloaded security image to &quot;t_s.bmp&quot; and move it to the assets/ folder in the project directory.</p>
+<p><img src="images/addt_s.png" alt=""></p>
+<h3 id="set-the-androidmanifestxml"><a name="set-the-androidmanifestxml" class="plugin-anchor" href="#set-the-androidmanifestxml"><i class="fa fa-link" aria-hidden="true"></i></a>Set the AndroidManifest.xml</h3>
+<p>Set appkey and appSecret in the AndroidManifest.xml file, and configure corresponding permissions, etc.</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>TUYA_SMART_APPKEY<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Appkey<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>TUYA_SMART_SECRET<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>AppSecret<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h3 id="proguard-configuration"><a name="proguard-configuration" class="plugin-anchor" href="#proguard-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Proguard Configuration</h3>
+<p>please add this proguard configuration to proguard-rules.pro files. </p>
+<pre class="language-"><code class="lang-bash"><span class="token comment">#fastJson</span>
+-keep class com.alibaba.fastjson.**<span class="token punctuation">{</span>*<span class="token punctuation">;</span><span class="token punctuation">}</span>
+-dontwarn com.alibaba.fastjson.**
+
+<span class="token comment">#mqtt</span>
+-keep class org.eclipse.paho.client.mqttv3.** <span class="token punctuation">{</span> *<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+-dontwarn org.eclipse.paho.client.mqttv3.**
+
+-dontwarn okio.**
+-dontwarn rx.**
+-dontwarn javax.annotation.**
+-keep class com.squareup.okhttp.** <span class="token punctuation">{</span> *<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+-keep interface com.squareup.okhttp.** <span class="token punctuation">{</span> *<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+-keep class okio.** <span class="token punctuation">{</span> *<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+-dontwarn com.squareup.okhttp.**
+
+-keep class com.tuya.**<span class="token punctuation">{</span>*<span class="token punctuation">;</span><span class="token punctuation">}</span>
+-dontwarn com.tuya.**
+</code></pre>
+<h3 id="sdk-init"><a name="sdk-init" class="plugin-anchor" href="#sdk-init"><i class="fa fa-link" aria-hidden="true"></i></a>SDK Init</h3>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>appliction<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Home sdk init</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>appliction<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//Sweeper SDK init</span>
+</code></pre>
+<p><code>ITuyaSweeperKitSdk</code> 
+provides the data capability entrance of the laser sweeper and the download function of voice packets.
+Call method:</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaSweeperKitSdk</span> iTuyaSweeperKitSdk <span class="token operator">=</span> <span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Preparation.html" class="navigation navigation-prev " aria-label="Previous page: Integration preparation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Version_Changes.html" class="navigation navigation-next " aria-label="Next page: Version change instructions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Integrated SDK","level":"1.3","depth":1,"next":{"title":"Version change instructions","level":"1.4","depth":1,"path":"resource/Version_Changes.md","ref":"./resource/Version_Changes.md","articles":[]},"previous":{"title":"Integration preparation","level":"1.2","depth":1,"path":"resource/Preparation.md","ref":"./resource/Preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","alerts","favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{},"alerts":{},"github-buttons":{"sharing":{"facebook":true,"google":true,"twitter":true,"weibo":true,"all":["facebook","google","twitter","weibo"]},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Integrated.md","mtime":"2020-04-24T01:40:26.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T10:09:18.166Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

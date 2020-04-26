@@ -1,0 +1,1043 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>激光扫地机 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Laser_Sweeper.html" />
+    
+    
+    <link rel="prev" href="Gyro_Sweeper.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    集成准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Version_Changes.html">
+            
+                <a href="Version_Changes.html">
+            
+                    
+                    版本变更说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Gyro_Sweeper.html">
+            
+                <a href="Gyro_Sweeper.html">
+            
+                    
+                    陀螺仪和视觉扫地机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#扫地机数据获取">
+            
+                    
+                    数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#激光扫地机多地图管理">
+            
+                    
+                    多地图管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Voice_Download.html">
+            
+                <a href="Voice_Download.html">
+            
+                    
+                    语音包下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Word_Introduction.html">
+            
+                <a href="Word_Introduction.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Update_Log.html">
+            
+                <a href="Update_Log.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >激光扫地机</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;"><a name="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;" class="plugin-anchor" href="#&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;</h1>
+<ul>
+<li>&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x5206;&#x4E3A;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x548C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x90FD;&#x5305;&#x542B;&#x4E86;&#x5730;&#x56FE;&#x6570;&#x636E;&#x548C;&#x8DEF;&#x5F84;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x6587;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x5728; OSS &#x4E0A;&#x3002;</li>
+<li>&#x5176;&#x4E2D;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x7684;&#x5730;&#x56FE;&#x548C;&#x8DEF;&#x5F84;&#x662F;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x6587;&#x4EF6;&#x5185;&#x7684;&#xFF0C;&#x5386;&#x53F2;&#x6570;&#x636E;&#x7684;&#x5730;&#x56FE;&#x548C;&#x8DEF;&#x5F84;&#x662F;&#x5B58;&#x50A8;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5185;&#x7684;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#x8BFB;&#x53D6;&#x5730;&#x56FE;&#x548C;&#x8DEF;&#x5F84;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x5EFA;&#x8BAE;&#x6240;&#x6709;&#x63A5;&#x53E3;&#x5728;<code>initCloudConfig</code>&#x6210;&#x529F;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x6709;&#x6548;&#x671F;&#x534A;&#x4E2A;&#x5C0F;&#x65F6;&#x5931;&#x8D25;&#x540E;<code>updateCloudConfig</code></li>
+</ul>
+<h2 id="&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x83B7;&#x53D6;"><a name="&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x83B7;&#x53D6;</h2>
+<h3 id="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x5B9E;&#x65F6;&#x901A;&#x9053;&#x6D41;&#x7A0B;&#x56FE;"><a name="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x5B9E;&#x65F6;&#x901A;&#x9053;&#x6D41;&#x7A0B;&#x56FE;" class="plugin-anchor" href="#&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x5B9E;&#x65F6;&#x901A;&#x9053;&#x6D41;&#x7A0B;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x5B9E;&#x65F6;&#x901A;&#x9053;&#x6D41;&#x7A0B;&#x56FE;</h3>
+<p><img src="images/laser_data_cn.png" alt="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x83B7;&#x53D6;"></p>
+<h3 id="&#x626B;&#x5730;&#x673A;&#x65B0;&#x65E7;&#x7248;&#x672C;&#x5165;&#x53E3;"><a name="&#x626B;&#x5730;&#x673A;&#x65B0;&#x65E7;&#x7248;&#x672C;&#x5165;&#x53E3;" class="plugin-anchor" href="#&#x626B;&#x5730;&#x673A;&#x65B0;&#x65E7;&#x7248;&#x672C;&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x626B;&#x5730;&#x673A;&#x65B0;&#x65E7;&#x7248;&#x672C;&#x5165;&#x53E3;</h3>
+<p>&#x65B0;&#x65E7;&#x7248;&#x672C;&#x5165;&#x53E3;&#x4E0D;&#x540C;&#xFF0C;&#x529F;&#x80FD;&#x63A5;&#x53E3;&#x76F8;&#x540C;</p>
+<ul>
+<li><p>&#x8001;&#x7248;&#x672C;&#x5165;&#x53E3; <code>ITuyaSweeper</code> </p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaSweeper</span>  iTuyaSweeper <span class="token operator">=</span> <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#x5165;&#x53E3; <code>ITuyaSweeperKit</code></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaSweeperKitSdk</span> iTuyaSweeperKitSdk <span class="token operator">=</span> <span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token class-name">ITuyaSweeperKit</span> iTuyaSweeperKit <span class="token operator">=</span> iTuyaSweeperKitSdk<span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x4E91;&#x914D;&#x7F6E;"><a name="&#x521D;&#x59CB;&#x5316;&#x4E91;&#x914D;&#x7F6E;" class="plugin-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x4E91;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x4E91;&#x914D;&#x7F6E;</h3>
+<p> <strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</p>
+<p>&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7684; bucket&#x4FE1;&#x606F;</p>
+<pre class="language-"><code>/**
+*
+* @param devId     &#x8BBE;&#x5907;id
+* @param callback  
+*/
+void initCloudConfig(String devId, ITuyaCloudConfigCallback callback);
+</code></pre></li>
+</ul>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">initCloudConfig</span><span class="token punctuation">(</span><span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaCloudConfigCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">initCloudConfig</span><span class="token punctuation">(</span><span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaCloudConfigCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x66F4;&#x65B0;&#x4E91;&#x7AEF;&#x914D;&#x7F6E;"><a name="&#x66F4;&#x65B0;&#x4E91;&#x7AEF;&#x914D;&#x7F6E;" class="plugin-anchor" href="#&#x66F4;&#x65B0;&#x4E91;&#x7AEF;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x4E91;&#x7AEF;&#x914D;&#x7F6E;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<p>&#x83B7;&#x53D6;&#x6700;&#x65B0; bucket &#x4FE1;&#x606F;</p>
+<p>&#x7531;&#x4E8E;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6587;&#x4EF6;&#x5730;&#x5740;&#x6709;&#x65F6;&#x6548;&#x6027;&#xFF0C;&#x5F53;&#x6587;&#x4EF6;&#x5730;&#x5740;&#x5931;&#x6548;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#x66F4;&#x65B0;&#x4E91;&#x914D;&#x7F6E;</p>
+<pre class="language-"><code>/**
+ *
+ * @param devId    &#x8BBE;&#x5907;id
+ * @param callback
+ */
+void updateCloudConfig(String devId, ITuyaCloudConfigCallback callback);
+</code></pre><p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">updateCloudConfig</span><span class="token punctuation">(</span>deviceId<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaCloudConfigCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">updateCloudConfig</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaCloudConfigCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onConfigError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;"><a name="&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;(&#x8FD4;&#x56DE;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;)</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<p>&#x5F53;&#x4E91;&#x914D;&#x7F6E;&#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x542F;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x6765;&#x83B7;&#x53D6;&#x5B9E;&#x65F6;&#x6570;&#x636E;</p>
+<pre class="language-"><code>/**
+ * &#x5F00;&#x542F;&#x626B;&#x5730;&#x673A;&#x6570;&#x636E;&#x901A;&#x9053;&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;url
+ *
+ * @param listener
+ */
+void startConnectSweeperDataChannel(ITuyaSweeperDataListener listener);
+
+/**
+ * &#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;
+ */
+void stopConnectSweeperDataChannel();
+</code></pre><p>&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784; SweeperDataBean</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mapType</td>
+<td>int</td>
+<td>0&#x8868;&#x793A;&#x5730;&#x56FE;&#xFF0C;1&#x8868;&#x793A;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>mapPath</td>
+<td>String</td>
+<td>&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x6216;&#x8005;&#x5730;&#x56FE;&#x8DEF;&#x5F84;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">startConnectSweeperDataChannel</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaSweeperDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperDataReceived</span><span class="token punctuation">(</span><span class="token class-name">SweeperDataBean</span> sweeperDataBean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">startConnectSweeperDataChannel</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaSweeperDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperDataReceived</span><span class="token punctuation">(</span><span class="token class-name">SweeperDataBean</span> bean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;byte&#x6570;&#x7EC4;"><a name="&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;byte&#x6570;&#x7EC4;" class="plugin-anchor" href="#&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x8FD4;&#x56DE;byte&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x518C;&#x6216;&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;(&#x8FD4;&#x56DE;byte&#x6570;&#x7EC4;)</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<p>&#x5F53;&#x4E91;&#x914D;&#x7F6E;&#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x542F;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#x6765;&#x83B7;&#x53D6;&#x5B9E;&#x65F6;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+ * &#x5F00;&#x542F;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;byte[]
+ *
+ * @param listener
+ */</span>
+<span class="token keyword">void</span> <span class="token function">startConnectSweeperByteDataChannel</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperByteDataListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * &#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x901A;&#x9053;
+ */</span>
+<span class="token keyword">void</span> <span class="token function">stopConnectSweeperByteDataChannel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784; SweeperByteData</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>int</td>
+<td>0&#x8868;&#x793A;&#x5730;&#x56FE;&#xFF0C;1&#x8868;&#x793A;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>data</td>
+<td>byte[]</td>
+<td>&#x6570;&#x636E;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>&#x8BBE;&#x5907;id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">startConnectSweeperByteDataChannel</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaSweeperByteDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperByteData</span><span class="token punctuation">(</span><span class="token class-name">SweeperByteData</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span><span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">startConnectSweeperByteDataChannel</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaSweeperByteDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperByteData</span><span class="token punctuation">(</span><span class="token class-name">SweeperByteData</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span><span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x6587;&#x4EF6;url"><a name="&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x6587;&#x4EF6;url" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x6587;&#x4EF6;url"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x6587;&#x4EF6;url</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</p>
+<p>&#x83B7;&#x53D6;&#x5730;&#x56FE;&#x6587;&#x4EF6;&#x5728; OSS &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B8C;&#x6574;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x4E0B;&#x8F7D;&#x89E3;&#x6790;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+*
+* @param bucket &#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7684;bucket
+* @param path   &#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF08;startConnectSweeperDataChannel&#xFF09;
+*/</span>
+<span class="token class-name">String</span> <span class="token function">getCloudFileUrl</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">,</span> <span class="token class-name">String</span> path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getCloudFileUrl</span><span class="token punctuation">(</span><span class="token string">&quot;bucket&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getCloudFileUrl</span><span class="token punctuation">(</span><span class="token string">&quot;bucket&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x636E;"><a name="&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x636E;" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6570;&#x636E;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<pre class="language-"><code class="lang-java">
+<span class="token comment">/**
+ *
+ * @param devId    &#x8BBE;&#x5907; id
+ * @param limit    &#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;(&#x5EFA;&#x8BAE;&#x6700;&#x5927;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;100)
+ * @param offset   &#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x504F;&#x79FB;&#x91CF;(&#x7528;&#x4E8E;&#x5206;&#x9875;)
+ * @param callback
+ */</span>
+<span class="token keyword">void</span> <span class="token function">getSweeperHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span><span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ *
+ * @param devId     &#x8BBE;&#x5907; id
+ * @param limit     &#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;(&#x5EFA;&#x8BAE;&#x6700;&#x5927;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;100)
+ * @param offset    &#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x504F;&#x79FB;&#x91CF;(&#x7528;&#x4E8E;&#x5206;&#x9875;)
+ * @param startTime &#x8D77;&#x59CB;&#x65F6;&#x95F4;&#x6233;
+ * @param endTime   &#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x6233;
+ * @param callback
+ */</span>
+<span class="token keyword">void</span> <span class="token function">getSweeperHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span> <span class="token keyword">long</span> startTime<span class="token punctuation">,</span> <span class="token keyword">long</span> endTime<span class="token punctuation">,</span><span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784;-sweeperhistory&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><a name="&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784;-sweeperhistory&#x5B57;&#x6BB5;&#x4FE1;&#x606F;" class="plugin-anchor" href="#&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784;-sweeperhistory&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DE;&#x8C03;&#x6570;&#x636E;&#x7ED3;&#x6784; SweeperHistory&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>datas</td>
+<td>List<sweeperhistorybean></sweeperhistorybean></td>
+<td>&#x5386;&#x53F2;&#x6570;&#x636E;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>totalCount</td>
+<td>int</td>
+<td>&#x6570;&#x636E;&#x603B;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="sweeperhistorybean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><a name="sweeperhistorybean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;" class="plugin-anchor" href="#sweeperhistorybean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>SweeperHistoryBean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>String</td>
+<td>&#x5730;&#x56FE; id</td>
+</tr>
+<tr>
+<td>time</td>
+<td>long</td>
+<td>&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>bucket</td>
+<td>String</td>
+<td>&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7684; bucket</td>
+</tr>
+<tr>
+<td>file</td>
+<td>String</td>
+<td>&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>extend</td>
+<td>String</td>
+<td>&#x6269;&#x5C55;&#x5B57;&#x6BB5;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x3010;extend&#x8BF4;&#x660E;&#x3011;</strong>
+extend&#x662F;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x548C;&#x8BBE;&#x5907;&#x900F;&#x4F20;&#xFF08; &#x4F8B;&#x5982;&#xFF1A;{&quot;map_id&quot;:123,&quot;layout_size&quot;:4589,&quot;route_size&quot;:1024} &#xFF09;</p>
+<p>layout_size&#x8868;&#x793A;&#x5730;&#x56FE;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x5373;&#x6587;&#x4EF6;&#x4E2D;&#x5730;&#x56FE;&#x6570;&#x636E;&#x7684;size</p>
+<p>route_size&#x8868;&#x793A;&#x8DEF;&#x5F84;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x5373;&#x6587;&#x4EF6;&#x4E2D;&#x8DEF;&#x5F84;&#x6570;&#x636E;&#x7684;size</p>
+<p>&#x8BFB;&#x53D6;&#x5386;&#x53F2;&#x6570;&#x636E;&#x7684;&#x6587;&#x4EF6;&#x65F6;&#x6839;&#x636E;layout_size&#x548C;route_size&#x5206;&#x522B;&#x8BFB;&#x53D6;&#x5730;&#x56FE;&#x6570;&#x636E;&#x548C;&#x8DEF;&#x5F84;&#x6570;&#x636E;</p>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;   </span>
+ <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperHistoryData</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">SweeperHistory</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C; </span>
+   <span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperHistoryData</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">SweeperHistory</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;"><a name="&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x4E91;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</p>
+<p>&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8BE5;&#x63A5;&#x53E3;&#x8BFB;&#x53D6;&#x4E91;&#x7AEF;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-java">
+<span class="token comment">/**
+ * &#x83B7;&#x53D6;&#x6570;&#x636E;&#x5185;&#x5BB9;&#xFF08;byte[]&#xFF09;
+ *
+ * @param bucket
+ * @param path
+ * @param listener
+ */</span>
+<span class="token keyword">void</span> <span class="token function">getSweeperByteData</span><span class="token punctuation">(</span><span class="token class-name">String</span> bucket<span class="token punctuation">,</span> <span class="token class-name">String</span> path<span class="token punctuation">,</span> <span class="token class-name">ITuyaByteDataListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;        </span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperByteData</span><span class="token punctuation">(</span><span class="token string">&quot;bucket&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;path&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaByteDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperByteData</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span><span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C; </span>
+   <span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperByteData</span><span class="token punctuation">(</span><span class="token string">&quot;bucket&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;path&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaByteDataListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSweeperByteData</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span><span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x5220;&#x9664;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><a name="&#x5220;&#x9664;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#&#x5220;&#x9664;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</p>
+<p>&#x5220;&#x9664;&#x4E91;&#x7AEF;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4EE5;&#x53CA;&#x5B58;&#x50A8;&#x5728;oss&#x7684;&#x6570;&#x636E;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+* @param devId      &#x8BBE;&#x5907; id
+* @param fileIdList &#x5386;&#x53F2;&#x8BB0;&#x5F55; id &#x96C6;&#x5408;
+* @param callback  
+*/</span>
+<span class="token keyword">void</span> <span class="token function">deleteSweeperHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> fileIdList<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">ITuyaDelHistoryCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;10&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;11&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x8001;&#x7248;&#x672C;        TuyaHomeSdk.getSweeperInstance().deleteSweeperHistoryData(&quot;devId&quot;, list, new ITuyaDelHistoryCallback() {</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;        TuyaOptimusSdk.getManager(ITuyaSweeperKitSdk.class).getSweeperInstance().deleteSweeperHistoryData(&quot;devId&quot;, list, new ITuyaDelHistoryCallback() {</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x6E05;&#x7A7A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><a name="&#x6E05;&#x7A7A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#&#x6E05;&#x7A7A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E05;&#x7A7A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li><p>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</p>
+<p>&#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+* &#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;
+* @param devId     &#x8BBE;&#x5907; id
+* @param callback
+*/</span>
+<span class="token keyword">void</span> <span class="token function">deleteAllHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span><span class="token keyword">final</span> <span class="token class-name">ITuyaDelHistoryCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">deleteAllHistoryData</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaDelHistoryCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;        TuyaOptimusSdk.getManager(ITuyaSweeperKitSdk.class).getSweeperInstance().deleteAllHistoryData(&quot;devId&quot;, new ITuyaDelHistoryCallback() {</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<hr>
+<h3 id="&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#x5168;&#x91CF;&#x6570;&#x636E;"><a name="&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#x5168;&#x91CF;&#x6570;&#x636E;" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#x5168;&#x91CF;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#x5168;&#x91CF;&#x6570;&#x636E;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+     * &#x83B7;&#x53D6;&#x5B9E;&#x65F6;&#x7684;&#x5730;&#x56FE;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x548C;&#x8DEF;&#x7EBF;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;
+     * @param devId    &#x8BBE;&#x5907; id
+     * @param callback
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">getSweeperCurrentPath</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span><span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperPathBean</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="sweeperpathbean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><a name="sweeperpathbean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;" class="plugin-anchor" href="#sweeperpathbean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>SweeperPathBean&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mapPath</td>
+<td>String</td>
+<td>&#x5730;&#x56FE; path</td>
+</tr>
+<tr>
+<td>routePath</td>
+<td>String</td>
+<td>&#x8DEF;&#x5F84; path</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8001;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperCurrentPath</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperPathBean</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">SweeperPathBean</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x65B0;&#x7248;&#x672C;</span>
+<span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperCurrentPath</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperPathBean</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">SweeperPathBean</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x591A;&#x5730;&#x56FE;&#x7BA1;&#x7406;"><a name="&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x591A;&#x5730;&#x56FE;&#x7BA1;&#x7406;" class="plugin-anchor" href="#&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x591A;&#x5730;&#x56FE;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6FC0;&#x5149;&#x626B;&#x5730;&#x673A;&#x591A;&#x5730;&#x56FE;&#x7BA1;&#x7406;</h2>
+<p>&#x63D0;&#x4F9B;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;&#x7528;&#x4E8E;&#x626B;&#x5730;&#x673A;&#x591A;&#x5730;&#x56FE;&#x83B7;&#x53D6;&#x548C;&#x5220;&#x9664;</p>
+<h3 id="&#x83B7;&#x53D6;&#x591A;&#x5730;&#x56FE;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><a name="&#x83B7;&#x53D6;&#x591A;&#x5730;&#x56FE;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x591A;&#x5730;&#x56FE;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x591A;&#x5730;&#x56FE;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x4E0D;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<pre class="language-"><code class="lang-java">
+<span class="token comment">/**
+ * &#x83B7;&#x53D6;&#x626B;&#x5730;&#x673A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;(&#x591A;&#x5730;&#x56FE;)
+ * @param devId    &#x8BBE;&#x5907;id
+ * @param limit    &#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;(&#x5EFA;&#x8BAE;&#x6700;&#x5927;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;100)
+ * @param offset   &#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x504F;&#x79FB;&#x91CF;(&#x7528;&#x4E8E;&#x5206;&#x9875;)
+ * @param callback
+ */</span>
+<span class="token keyword">void</span> <span class="token function">getSweeperMultiMapHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span>
+                                   <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * &#x83B7;&#x53D6;&#x626B;&#x5730;&#x673A;&#x5386;&#x53F2;&#x8BB0;&#x5F55; &#xFF08;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x5730;&#x56FE;&#xFF09;
+ * @param devId     &#x8BBE;&#x5907;id
+ * @param limit     &#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;(&#x5EFA;&#x8BAE;&#x6700;&#x5927;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;100)
+ * @param offset    &#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x504F;&#x79FB;&#x91CF;(&#x7528;&#x4E8E;&#x5206;&#x9875;)
+ * @param startTime &#x8D77;&#x59CB;&#x65F6;&#x95F4;&#x6233;
+ * @param endTime   &#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x6233;
+ * @param callback
+ */</span>
+<span class="token keyword">void</span> <span class="token function">getSweeperMultiMapHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">int</span> limit<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">,</span> <span class="token keyword">long</span> startTime<span class="token punctuation">,</span> <span class="token keyword">long</span> endTime<span class="token punctuation">,</span>
+                                   <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperMultiMapHistoryData</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaResultCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">SweeperHistory</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">SweeperHistory</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><a name="&#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#&#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<ul>
+<li>&#x8001;&#x7248;&#x672C;&#xFF08;0.1.0&#x4E4B;&#x524D;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x4E0D;&#x652F;&#x6301;</li>
+<li>&#x65B0;&#x7248;&#x672C;&#xFF08;0.1.0&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF09; &#xFF1A;&#x652F;&#x6301;</li>
+</ul>
+<pre class="language-"><code class="lang-java">
+<span class="token comment">/**
+ * &#x5220;&#x9664;&#x6240;&#x6709;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF08;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x5730;&#x56FE;&#xFF09;
+ * @param devId
+ * @param callback
+ */</span>
+<span class="token keyword">void</span> <span class="token function">deleteAllMultiMapHistoryData</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token class-name">ITuyaDelHistoryCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaOptimusSdk</span><span class="token punctuation">.</span><span class="token function">getManager</span><span class="token punctuation">(</span><span class="token class-name">ITuyaSweeperKitSdk</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSweeperInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">deleteAllMultiMapHistoryData</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaDelHistoryCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x5176;&#x4ED6;"><a name="&#x5176;&#x4ED6;" class="plugin-anchor" href="#&#x5176;&#x4ED6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;</h2>
+<p><a href="https://www.alibabacloud.com/help/zh/doc-detail/32005.html" target="_blank">oss&#x9519;&#x8BEF;&#x5206;&#x6790;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Gyro_Sweeper.html" class="navigation navigation-prev " aria-label="Previous page: 陀螺仪和视觉扫地机">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Laser_Sweeper.html#扫地机数据获取" class="navigation navigation-next " aria-label="Next page: 数据获取">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"激光扫地机","level":"1.6","depth":1,"next":{"title":"数据获取","level":"1.6.1","depth":2,"anchor":"#扫地机数据获取","path":"resource/Laser_Sweeper.md","ref":"./resource/Laser_Sweeper.md#扫地机数据获取","articles":[]},"previous":{"title":"陀螺仪和视觉扫地机","level":"1.5","depth":1,"path":"resource/Gyro_Sweeper.md","ref":"./resource/Gyro_Sweeper.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","alerts","favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{},"alerts":{},"github-buttons":{"sharing":{"facebook":true,"google":true,"twitter":true,"weibo":true,"all":["facebook","google","twitter","weibo"]},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Laser_Sweeper.md","mtime":"2020-04-23T02:00:49.379Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T10:09:18.166Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

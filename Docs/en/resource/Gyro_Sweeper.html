@@ -1,0 +1,697 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Gyroscope and visual sweeper · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Laser_Sweeper.html" />
+    
+    
+    <link rel="prev" href="Version_Changes.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    Integration preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    Integrated SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Version_Changes.html">
+            
+                <a href="Version_Changes.html">
+            
+                    
+                    Version change instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Gyro_Sweeper.html">
+            
+                <a href="Gyro_Sweeper.html">
+            
+                    
+                    Gyroscope and visual sweeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html">
+            
+                    
+                    Laser sweeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#Sweeper_Data_Acquisition">
+            
+                    
+                    Data collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Laser_Sweeper.html">
+            
+                <a href="Laser_Sweeper.html#Multi-map_Management_of_Laser_Sweeper">
+            
+                    
+                    Multi-map management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Voice_Download.html">
+            
+                <a href="Voice_Download.html">
+            
+                    
+                    Voice package download
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Word_Introduction.html">
+            
+                <a href="Word_Introduction.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Update_Log.html">
+            
+                <a href="Update_Log.html">
+            
+                    
+                    Update log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Gyroscope and visual sweeper</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="gyroscope-and-visual-sweeper"><a name="gyroscope-and-visual-sweeper" class="plugin-anchor" href="#gyroscope-and-visual-sweeper"><i class="fa fa-link" aria-hidden="true"></i></a>Gyroscope and Visual Sweeper</h2>
+<p>The SDK provides two data acquisition methods: HTTPS interface request and real-time channel. To acquire and delete historical data, you need to request the HTTPS interface. The data transferred during the sweeping of the sweeper can be obtained by monitoring the real-time channel registration.</p>
+<h3 id="https-interface-tuyahomesdk-public-api-calling-method"><a name="https-interface-tuyahomesdk-public-api-calling-method" class="plugin-anchor" href="#https-interface-tuyahomesdk-public-api-calling-method"><i class="fa fa-link" aria-hidden="true"></i></a>HTTPS interface: TuyaHomeSdk public API calling method</h3>
+<p><strong>Interface Description</strong></p>
+<p>The HTTPS interface uses TuyaHomeSdk&apos;s call through the interface, mainly passing in the interface name, interface version number, and input parameters.</p>
+<p><strong>Entrance</strong>&#xFF1A;<code>TuyaHomeSdk.getRequestInstance()</code></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ITuyaSmartRequest</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">/**
+     *
+     * @param apiName  api name
+     * @param version  api version
+     * @param postData params to post
+     * @param callback 
+     * @param object Data structure to receive callback data, such as corresponding javabean     
+     */</span>
+    <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> <span class="token keyword">void</span> <span class="token function">requestWithApiName</span><span class="token punctuation">(</span><span class="token class-name">String</span> apiName<span class="token punctuation">,</span> <span class="token class-name">String</span> version<span class="token punctuation">,</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> postData<span class="token punctuation">,</span> <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> object<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">ITuyaDataCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> <span class="token keyword">void</span> <span class="token function">requestWithApiNameWithoutSession</span><span class="token punctuation">(</span><span class="token class-name">String</span> apiName<span class="token punctuation">,</span> <span class="token class-name">String</span> version<span class="token punctuation">,</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> postData<span class="token punctuation">,</span> <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> object<span class="token punctuation">,</span> <span class="token keyword">final</span> <span class="token class-name">ITuyaDataCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="1get-history-list"><a name="1get-history-list" class="plugin-anchor" href="#1get-history-list"><i class="fa fa-link" aria-hidden="true"></i></a>1.Get History List</h4>
+<p>Request parameters&#xFF1A;</p>
+<p>apiName&#xFF1A;m.smart.scale.history.get.list</p>
+<p>version&#xFF1A;1.0</p>
+<p>postData:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dpIds&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;offset&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;limit&quot;</span> <span class="token operator">:</span> <span class="token number">10</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devId</td>
+<td>String</td>
+<td>Device id</td>
+</tr>
+<tr>
+<td>dpIds</td>
+<td>String</td>
+<td>The dpId of the cleaning record configured on the Tuya platform</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>int</td>
+<td>Offset value</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>int</td>
+<td>Number of pages</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of Returned Data</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+        <span class="token property">&quot;datas&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;devId&quot;</span><span class="token operator">:</span><span class="token string">&quot;xxxx&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;dps&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;15&quot;</span><span class="token operator">:</span><span class="token string">&quot;201906171721009007&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/smart/user_res/avatar/scale/no_body_icon.png&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;userName&quot;</span><span class="token operator">:</span><span class="token string">&quot;unknow&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;gmtCreate&quot;</span><span class="token operator">:</span><span class="token number">1560763848501</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span><span class="token string">&quot;15607600058B81A6C4A0273FDD61091D0B02403848501&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;userId&quot;</span><span class="token operator">:</span><span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token number">1</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hasNext&quot;</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;totalCount&quot;</span><span class="token operator">:</span><span class="token number">1</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>String</td>
+<td>UUID used when deleting records</td>
+</tr>
+<tr>
+<td>15</td>
+<td>String</td>
+<td>The dpId of the cleaning record configured on the Tuya platform</td>
+</tr>
+<tr>
+<td>201906171721009007</td>
+<td>String</td>
+<td>The value reported by the equipment under dpId [June 17, 2019, 17:21, cleaning time 009, cleaning area 007] Specific data and equipment are prepared</td>
+</tr>
+<tr>
+<td>total</td>
+<td>int</td>
+<td>Total numbers</td>
+</tr>
+<tr>
+<td>hasNext</td>
+<td>boolean</td>
+<td>Is there a next page</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2get-history-information-detail"><a name="2get-history-information-detail" class="plugin-anchor" href="#2get-history-information-detail"><i class="fa fa-link" aria-hidden="true"></i></a>2.Get History Information Detail</h4>
+<p>Request parameters:</p>
+<p>apiName:tuya.m.device.media.detail</p>
+<p>version:2.0</p>
+<p>postData:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;subRecordId&quot;</span> <span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;start&quot;</span><span class="token operator">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;size&quot;</span> <span class="token operator">:</span> <span class="token number">500</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Fields</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">devId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Device id</td>
+</tr>
+<tr>
+<td style="text-align:left">subRecordId</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">clean record id</td>
+</tr>
+<tr>
+<td style="text-align:left">start</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Pass the empty string for the first time, and fill the startRow value in the return value of the previous page when the next page is taken later</td>
+</tr>
+<tr>
+<td style="text-align:left">size</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Request data size</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of Returned Data</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startRow&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;mtnva58ee6817b605ddcc6_31_1535622776561&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dataList&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;3e3f02403e013e3f00&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;3f3f024040013f3f00&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;subRecordId&quot;</span> <span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasNext&quot;</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startTime&quot;</span> <span class="token operator">:</span> <span class="token number">1535621566</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;endTime&quot;</span> <span class="token operator">:</span> <span class="token number">1535623017</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span> <span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>startRow</td>
+<td>String</td>
+<td>Start value passed in next request</td>
+</tr>
+<tr>
+<td>subRecordId</td>
+<td>int</td>
+<td>clean record id</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>long</td>
+<td>start time,timestamp</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>long</td>
+<td>end time,timestamp</td>
+</tr>
+<tr>
+<td>hasNext</td>
+<td>boolean</td>
+<td>Is there a next page</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-latest-record"><a name="3-latest-record" class="plugin-anchor" href="#3-latest-record"><i class="fa fa-link" aria-hidden="true"></i></a>3. Latest Record</h4>
+<p>Request parameters:</p>
+<p>apiName:tuya.m.device.media.latest</p>
+<p>version:2.0</p>
+<p>postData:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;start&quot;</span><span class="token operator">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;size&quot;</span> <span class="token operator">:</span> <span class="token number">500</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example of Returned Data</strong></p>
+<pre class="language-"><code class="lang-json"> <span class="token punctuation">{</span>
+    <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startRow&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;mtnva58ee6817b605ddcc6_35_1535629239586&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dataList&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;373702373700&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;383702383802373901383901383800&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;subRecordId&quot;</span> <span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasNext&quot;</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;startTime&quot;</span> <span class="token operator">:</span> <span class="token number">1535629049</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;endTime&quot;</span> <span class="token operator">:</span> <span class="token number">1535629244</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span> <span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="4-delete-history-up-to-100-records"><a name="4-delete-history-up-to-100-records" class="plugin-anchor" href="#4-delete-history-up-to-100-records"><i class="fa fa-link" aria-hidden="true"></i></a>4. Delete History (up to 100 records)</h4>
+<p>Request parameters:</p>
+<p>apiName&#xFF1A;m.smart.scale.history.delete</p>
+<p>version&#xFF1A;1.0</p>
+<p>postData:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;devId&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span>&quot;<span class="token number">15607600058</span>B<span class="token number">81</span>A<span class="token number">6</span>C<span class="token number">4</span>A<span class="token number">0273</span>FDD<span class="token number">61091</span>D<span class="token number">0</span>B<span class="token number">02403848501</span><span class="token punctuation">,</span>
+  <span class="token number">15607600058</span>B<span class="token number">81</span>A<span class="token number">6</span>C<span class="token number">4</span>A<span class="token number">0273</span>FDD<span class="token number">61091</span>D<span class="token number">0</span>B<span class="token number">0240384850</span>&quot;&#x3001;
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example of Returned Data</strong></p>
+<pre class="language-"><code class="lang-json"> ture / <span class="token boolean">false</span>
+</code></pre>
+<h2 id="real-time-data-channel"><a name="real-time-data-channel" class="plugin-anchor" href="#real-time-data-channel"><i class="fa fa-link" aria-hidden="true"></i></a>Real-time data channel</h2>
+<h3 id="interface-description"><a name="interface-description" class="plugin-anchor" href="#interface-description"><i class="fa fa-link" aria-hidden="true"></i></a>Interface Description</h3>
+<p>Register the real-time data channel to monitor the device data stream report, and the returned data is in the form of byte array, which is parsed into available data according to the machine protocol, such as x, y coordinates, color value, etc.</p>
+<h3 id="channel-flow-chart"><a name="channel-flow-chart" class="plugin-anchor" href="#channel-flow-chart"><i class="fa fa-link" aria-hidden="true"></i></a>Channel flow chart</h3>
+<p><img src="images/sweeper_incremental_en.png" alt="Channel flow chart"></p>
+<p><strong>Entrance</strong>&#xFF1A;<code>TuyaHomeSdk.getTransferInstance();</code></p>
+<p><strong>Interface List</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"> <span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ITuyaSingleTransfer</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * start connect
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">startConnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * MQTT is online
+     */</span>
+    <span class="token keyword">boolean</span> <span class="token function">isOnline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * When registering device data streams, the SDK does not perform data parsing. The specific format needs to be agreed with the hardware reporting party before parsing.
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">registerTransferDataListener</span><span class="token punctuation">(</span><span class="token class-name">ITuyaDataCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">TransferDataBean</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * Unsubscribe device data stream
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">unRegisterTransferDataListener</span><span class="token punctuation">(</span><span class="token class-name">ITuyaDataCallback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">TransferDataBean</span><span class="token punctuation">&gt;</span></span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The status of the registered channel changes, which will cause the channel to disconnect and reconnect when the network fluctuates     */</span>
+    <span class="token keyword">void</span> <span class="token function">registerTransferCallback</span><span class="token punctuation">(</span><span class="token class-name">ITuyaTransferCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/** Unregister
+    */</span>
+    <span class="token keyword">void</span> <span class="token function">unRegisterTransferCallback</span><span class="token punctuation">(</span><span class="token class-name">ITuyaTransferCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+    *   Disconnect the data flow channel
+    */</span>
+    <span class="token keyword">void</span> <span class="token function">stopConnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Version_Changes.html" class="navigation navigation-prev " aria-label="Previous page: Version change instructions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Laser_Sweeper.html" class="navigation navigation-next " aria-label="Next page: Laser sweeper">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Gyroscope and visual sweeper","level":"1.5","depth":1,"next":{"title":"Laser sweeper","level":"1.6","depth":1,"path":"resource/Laser_Sweeper.md","ref":"./resource/Laser_Sweeper.md","articles":[{"title":"Data collection","level":"1.6.1","depth":2,"anchor":"#Sweeper_Data_Acquisition","path":"resource/Laser_Sweeper.md","ref":"./resource/Laser_Sweeper.md#Sweeper_Data_Acquisition","articles":[]},{"title":"Multi-map management","level":"1.6.2","depth":2,"anchor":"#Multi-map_Management_of_Laser_Sweeper","path":"resource/Laser_Sweeper.md","ref":"./resource/Laser_Sweeper.md#Multi-map_Management_of_Laser_Sweeper","articles":[]}]},"previous":{"title":"Version change instructions","level":"1.4","depth":1,"path":"resource/Version_Changes.md","ref":"./resource/Version_Changes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","alerts","favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{},"alerts":{},"github-buttons":{"sharing":{"facebook":true,"google":true,"twitter":true,"weibo":true,"all":["facebook","google","twitter","weibo"]},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Gyro_Sweeper.md","mtime":"2020-04-15T07:03:57.465Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T10:09:18.166Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
