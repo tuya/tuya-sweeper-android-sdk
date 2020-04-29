@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".base.activity.GyroVisionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Get Data on Entry"
+        />
+    <Button
+        android:id="@+id/btn_load_map"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="1.Load Global Map"
+        />
+
+    <Button
+        android:id="@+id/btn_register_listener"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="2. Register Listener"
+        />
+
+    <Button
+        android:id="@+id/btn_unregister_listener"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:text="3. Unregister Listener When Exit"
+        />
+</LinearLayout>

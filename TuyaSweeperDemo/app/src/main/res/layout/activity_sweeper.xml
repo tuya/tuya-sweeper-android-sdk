@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".base.activity.LaserSweeperActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Get real-time data"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btn_init_config"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="1.Init Cloud Config"
+        />
+    <Button
+        android:id="@+id/btn_current_map"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="2.Get Current Map"
+        />
+    <Button
+        android:id="@+id/btn_register_channel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="3. Register Real-time Data Channel"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Get History Data"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btn_get_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get History Data"
+        />
+    <Button
+        android:id="@+id/btn_delete_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Delete All History  Data"
+        />
+
+</LinearLayout>
