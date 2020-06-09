@@ -1,0 +1,22 @@
+[
+  {
+    "domain": "a1.cn.wgine.com",
+    "certs": [
+      {
+        "eTime": 1632873599,
+        "sha256": "5235f5e49417272a16eb62dbc7414ccc9b4e98281c65b6f7144a69e7de330ac1",
+        "ver": "sha256/damSeaqdGN6erUgSMJ5b6xBu+tvak69u3tox45+0SxI="
+      },
+      {
+        "eTime": 1851811199,
+        "sha256": "43cac31ef8e8ba1b4b16b8206e4c0a26c5badb2fc3aa09e90170e41b66c2fd64",
+        "ver": "sha256/T+6uyT5C6WT480t2wqX2OJ3ZrNt2j8v52bWLj+XIvz8="
+      },
+      {
+        "eTime": 1590835718,
+        "sha256": "1a5174980a294a528a110726d5855650266c48d9883bea692b67b6d726da98c5",
+        "ver": "sha256/x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+      }
+    ]
+  }
+]

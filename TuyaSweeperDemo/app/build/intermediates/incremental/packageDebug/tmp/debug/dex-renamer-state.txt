@@ -1,0 +1,4 @@
+#Wed Apr 29 15:25:44 CST 2020
+base.0=/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

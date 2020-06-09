@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rMO/values-zh-rMO.xml",
+            "map": [
+                {
+                    "source": "/Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/res/values-zh-rMO/values-zh-rMO.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

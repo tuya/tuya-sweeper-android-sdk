@@ -1,0 +1,232 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tuya.sweeperdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml
+10    <!-- sdcard -->
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:5:5-81
+11-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:6:22-77
+13    <uses-permission
+13-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:7:5-9:36
+14        android:name="android.permission.READ_PHONE_STATE"
+14-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:8:9-59
+15        android:required="false" /> <!-- 网络 -->
+15-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:9:9-33
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:10:5-67
+16-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+17-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:11:5-79
+17-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+18-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:12:5-76
+18-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:12:22-73
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:13:5-79
+19-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:14:5-76
+20-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:14:22-73
+21    <uses-permission
+21-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:15:5-17:36
+22        android:name="android.permission.ACCESS_FINE_LOCATION"
+22-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:16:9-63
+23        android:required="false" />
+23-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:17:9-33
+24    <uses-permission
+24-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:18:5-20:36
+25        android:name="android.permission.WAKE_LOCK"
+25-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:19:9-52
+26        android:required="false" /> <!-- added from 2.7.2 -->
+26-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:20:9-33
+27    <uses-permission
+27-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:21:5-23:36
+28        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"
+28-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:22:9-70
+29        android:required="false" />
+29-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:23:9-33
+30
+31    <uses-feature
+31-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:2:3-88
+32        android:name="android.hardware.bluetooth_le"
+32-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:2:17-61
+33        android:required="false" />
+33-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:2:62-86
+34
+35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+35-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:7:3-74
+35-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:7:20-72
+36    <uses-permission android:name="android.permission.BLUETOOTH" />
+36-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:10:3-65
+36-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:10:20-63
+37
+38    <application
+38-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:25:5-84:19
+39        android:name="com.tuya.smart.sweeper.demo.TuyaSmartApp"
+39-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:26:9-37
+40        android:allowBackup="true"
+40-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:27:9-35
+41        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+41-->[com.android.support:support-compat:28.0.0] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ccf94a4f227dfa4f17156620e28a8b98/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+42        android:debuggable="true"
+43        android:icon="@mipmap/ic_launcher"
+43-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:28:9-43
+44        android:label="@string/app_name"
+44-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:29:9-41
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:30:9-54
+46        android:supportsRtl="false"
+46-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:31:9-36
+47        android:theme="@style/AppTheme" >
+47-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:32:9-40
+48        <activity android:name="com.tuya.smart.sweeper.demo.base.activity.SweeperChooseActivity" />
+48-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:33:9-82
+48-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:33:19-70
+49        <activity android:name="com.tuya.smart.sweeper.demo.base.activity.LaserSweeperActivity" />
+49-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:34:9-72
+49-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:34:19-69
+50        <activity android:name="com.tuya.smart.sweeper.demo.base.activity.GyroVisionActivity" />
+50-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:35:9-70
+50-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:35:19-67
+51
+52        <meta-data
+52-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:37:9-39:49
+53            android:name="TUYA_SMART_APPKEY"
+53-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:38:13-45
+54            android:value="YOUR_SMART_APPKEY" />
+54-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:39:13-46
+55        <meta-data
+55-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:40:9-42:49
+56            android:name="TUYA_SMART_SECRET"
+56-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:41:13-45
+57            android:value="YOUR_SMART_SRCRET" />
+57-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:42:13-46
+58
+59        <activity
+59-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:44:9-52:20
+60            android:name="com.tuya.smart.sweeper.demo.base.activity.SplashActivity"
+60-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:45:13-57
+61            android:screenOrientation="portrait" >
+61-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:46:13-49
+62            <intent-filter>
+62-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:47:13-51:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:48:17-69
+63-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:48:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:50:17-77
+65-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:50:27-74
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:53:9-56:67
+69            android:name="com.tuya.smart.sweeper.demo.base.activity.MainActivity"
+69-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:53:19-61
+70            android:screenOrientation="portrait"
+70-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:54:13-49
+71            android:theme="@style/Splash.Theme"
+71-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:55:13-48
+72            android:windowSoftInputMode="adjustPan|stateHidden" />
+72-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:56:13-64
+73        <activity
+73-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:57:9-61:67
+74            android:name="com.tuya.smart.sweeper.demo.login.activity.CountryListActivity"
+74-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:58:13-63
+75            android:screenOrientation="portrait"
+75-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:59:13-49
+76            android:theme="@style/Splash.Theme"
+76-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:60:13-48
+77            android:windowSoftInputMode="adjustPan|stateHidden" />
+77-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:61:13-64
+78        <activity
+78-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:62:9-66:67
+79            android:name="com.tuya.smart.sweeper.demo.login.activity.LoginActivity"
+79-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:63:13-57
+80            android:screenOrientation="portrait"
+80-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:64:13-49
+81            android:theme="@style/Splash.Theme"
+81-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:65:13-48
+82            android:windowSoftInputMode="adjustPan|stateHidden" />
+82-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:66:13-64
+83        <activity
+83-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:67:9-71:67
+84            android:name="com.tuya.smart.sweeper.demo.login.activity.LoginWithPhoneActivity"
+84-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:68:13-66
+85            android:screenOrientation="portrait"
+85-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:69:13-49
+86            android:theme="@style/Splash.Theme"
+86-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:70:13-48
+87            android:windowSoftInputMode="adjustPan|stateHidden" />
+87-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:71:13-64
+88        <activity
+88-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:72:9-76:67
+89            android:name="com.tuya.smart.sweeper.demo.login.activity.AccountInputActivity"
+89-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:73:13-64
+90            android:screenOrientation="portrait"
+90-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:74:13-49
+91            android:theme="@style/Splash.Theme"
+91-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:75:13-48
+92            android:windowSoftInputMode="adjustPan|stateHidden" />
+92-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:76:13-64
+93        <activity
+93-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:77:9-81:67
+94            android:name="com.tuya.smart.sweeper.demo.login.activity.AccountConfirmActivity"
+94-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:78:13-66
+95            android:screenOrientation="portrait"
+95-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:79:13-49
+96            android:theme="@style/Splash.Theme"
+96-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:80:13-48
+97            android:windowSoftInputMode="adjustPan|stateHidden" />
+97-->/Users/blitzfeng/Downloads/tuyasmart_home_android_sdk-master/TuyaSweeperDemo/app/src/main/AndroidManifest.xml:81:13-64
+98
+99        <service android:name="com.tuya.smart.mqtt.MqttService" />
+99-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:14:5-62
+99-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:14:14-60
+100        <service android:name="com.tuya.sdk.blelib.BluetoothService" />
+100-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:15:5-67
+100-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:15:14-65
+101        <service
+101-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:16:5-144
+102            android:name="com.tuya.smart.android.hardware.service.DevTransferService"
+102-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:16:14-87
+103            android:process=":monitor"
+103-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:16:88-114
+104            android:stopWithTask="true" />
+104-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:16:115-142
+105        <service
+105-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:5-22:15
+106            android:name="com.tuya.smart.android.hardware.service.GwBroadcastMonitorService"
+106-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:14-94
+107            android:exported="true"
+107-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:95-118
+108            android:label="UDPService"
+108-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:119-145
+109            android:process=":monitor"
+109-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:146-172
+110            android:stopWithTask="true" >
+110-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:17:173-200
+111            <intent-filter>
+111-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:18:7-21:23
+112                <action android:name="tuya.intent.action.udp" />
+112-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:19:9-56
+112-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:19:17-54
+113
+114                <category android:name="tuya" />
+114-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:20:9-40
+114-->[com.tuya.smart:tuyasmart:3.15.0-beta2] /Users/blitzfeng/.gradle/caches/transforms-2/files-2.1/ebbe3aac8eaddd25f6a7b6119de929d8/tuyasmart-3.15.0-beta2/AndroidManifest.xml:20:19-38
+115            </intent-filter>
+116        </service>
+117    </application>
+118
+119</manifest>
