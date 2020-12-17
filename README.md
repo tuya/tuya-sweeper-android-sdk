@@ -4,9 +4,9 @@
 
 ---
 
-* [English](https://tuyainc.github.io/tuyasmart_sweeper_android_sdk/en/)
+* [English](https://tuya.github.io/tuya-sweeper-android-sdk/en/)
 
-* [简体中文](https://tuyainc.github.io/tuyasmart_sweeper_android_sdk/zh-hans/)
+* [简体中文](https://tuya.github.io/tuya-sweeper-android-sdk/zh-hans/)
 
 
 # Lasest Version
