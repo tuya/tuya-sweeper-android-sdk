@@ -2,7 +2,7 @@
 
 ## Tuya Sweeper Android SDK Documentation
 
-Please check the following documentation.
+For more documentation, please check:
 
 * [English Version](https://tuya.github.io/tuya-sweeper-android-sdk/en/)
 
