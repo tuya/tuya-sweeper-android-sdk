@@ -4,9 +4,7 @@
 
 For more documentation, please check:
 
-* [English Version](https://tuya.github.io/tuya-sweeper-android-sdk/en/)
-
-* [简体中文版](https://tuya.github.io/tuya-sweeper-android-sdk/zh-hans/)
+* [Robot Vacuum SDK Development](https://developer.tuya.com/en/docs/iot/panel-development/panel-sdk-development/robot-vacuum-sdk-development/robot-vacuum-sdk-development?id=Ka62dti5h2fjw)
 
 
 ## Latest version
